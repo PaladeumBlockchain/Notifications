@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "f80a1d74-dfbb-414c-9bac-6037852bfa6c",
+		"name": "Notifications",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4772313"
+	},
+	"item": [
+		{
+			"name": "Watch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"device\": \"428e9eeb-03bf-49c8-8b52-5ba7f7534187\", \"addresses\": [\"KrBdAYiasBBuKfxd574LwtqNcbFjfhChpr\"]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:4321/watch",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "4321",
+					"path": [
+						"watch"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
