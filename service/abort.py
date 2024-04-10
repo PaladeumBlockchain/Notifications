@@ -1,9 +1,14 @@
 errors = {
     "watch": {
         "bad-device-id": "Invalid device id",
-        "invalid-address": "Invalid address"
-    }
+        "invalid-address": "Invalid address",
+    },
+    "swap": {
+        "untracked-address": "Untracked address",
+        "bad-auth": "Bad auth",
+    },
 }
+
 
 # Return error message
 def abort(scope, message):
@@ -14,10 +19,4 @@ def abort(scope, message):
     except Exception:
         error_message = "Unknown error"
 
-    return {
-        "error": {
-            "message": error_message,
-            "code": code
-        },
-        "data": {}
-    }
+    return {"error": {"message": error_message, "code": code}, "data": {}}
